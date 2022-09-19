@@ -1,11 +1,46 @@
 .container-hero
-    height: 100vh
+    height: 60vh
     width: 100vw
     display: grid
-    justify-items: center
+    justify-content: center
     align-items: center
     overflow: hidden
+    position: relative
     & img
-        width: 100%
+        height: 60vh
+    & .apertura
+            display: grid
+            align-items: center
+            position: absolute
+            bottom: 0
+            background-color: #635dff
+            left: 0
+            height: 50px
+            width: 4000px
+            animation: reel 5s linear 0s infinite 
+            & h3 
+                font-size: 30px
 
+
+@media screen and (min-width: 40em)
+    .container-hero
+        height: 100vh
+        width: 100vw
+        position: relative
+        display: grid
+        place-items: center
+        overflow: hidden
+        & img
+            width: 100%
+            height: 100%
+        
+
+
+@keyframes reel
+    0% 
+        left: 0px
+        
+    100% 
+        left: -445px
+        
 

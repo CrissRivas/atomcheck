@@ -1,24 +1,69 @@
 .container-app
-    display: grid
-    grid-template-rows: repeat(3,1fr)
-    width: 100vw
-    height: 200vh
+    display: flex
+    flex-direction: column
     gap: 30px
     padding: 30px
     & .section-apps
-        display: grid
-        grid-template-columns: 1fr 2fr
+        display: flex
+        flex-direction: column
         gap: 30px
         justify-items: center
         & .text-app 
             & .text-app-content
-                font-size: 3rem
-        & img
+                font-size: 1.6rem
+        & .img-app
+            & .afro
+                width: 260px
+                border-radius: 20px
+.apps
+    width: 240px
+    
+
+
+@media screen and (min-width: 40em)
+    .container-app
+        display: grid
+        grid-template-rows: repeat(3,1fr)
+        width: 100vw
+        height: 200vh
+        min-height: 1200px
+        gap: 30px
+        padding: 30px
+        & .section-apps
+            display: grid
+            grid-template-columns: 1fr 2fr
+            gap: 30px
+            justify-items: end
+            & .text-app 
+                
+                & .text-app-content
+                    font-size: 2.3rem
+            & .afro
+                height: 300px
+                border-radius: 20px
             
-            height: 300px
-            border-radius: 20px
-        
-           
             
-        
+@media screen and (min-width: 1400px)
+    .container-app
+        display: grid
+        grid-template-rows: repeat(3,1fr)
+        width: 100vw
+        height: 100vh
+        gap: 30px
+        padding: 0px 30px
+        & .section-apps
+            display: grid
+            min-height: 350px
+            height: 25vh
+            grid-template-columns: 1fr 2fr
+            gap: 60px
+            justify-items: end
+            & .text-app 
+                padding-right: 100px
+                & .text-app-content
+                    font-size: 2.3rem
+            & .afro
+                height: 300px
+                border-radius: 20px       
             
+                
