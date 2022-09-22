@@ -22,6 +22,40 @@
 </menu>
 
 <menu class="mobile">
+    
     <section><img src="assets/img/Atom.png" alt="Logo" class="logo"></section>
-    <section></section>
+    <section>
+        <button mat-icon-button (click)="this.toggleMnu()">
+            <mat-icon>menu</mat-icon>
+          </button>
+    </section>
+    <div class="mnu-mobile" [class.active]="activo">
+        <section class="close">
+            <section></section>
+            <section>
+                <button mat-icon-button (click)="this.toggleMnu()">
+                    <mat-icon>menu</mat-icon>
+                </button> 
+            </section>
+        </section>
+
+        <section class="mnu-list">
+            <a href="#" class="menu-button"> Caracteristicas</a>
+            <a href="#" class="menu-button"> Recursos</a>
+            <a href="#" class="menu-button"> Acceder</a>    
+            <a href="#" class="menu-button"> Registrarse</a>
+
+        </section>
+        <section class="icons">
+            <a href="https://www.linkedin.com/company/atomcheck-app/" class="icon"> 
+                <img src="assets/img/linkedin.png" alt="Linkedin" class="black">
+            </a>
+            <a href="" class="icon"> 
+                <img src="assets/img/insta.png" alt="Instagran" class="black">
+            </a>
+            <a href="" class="icon"> 
+                <img src="assets/img/twitter.png" alt="Twitter" class="black">
+            </a>
+        </section>
+    </div>
 </menu>
