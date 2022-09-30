@@ -1,0 +1,38 @@
+.plantilla-container
+    max-width: 1200px
+    width: 100%
+    display: grid
+    grid-template-rows: 100px 1fr 1fr 1fr
+    gap: 50px
+    margin: 0 auto
+    & .plantilla-titulo
+        height: 150px
+        width: 700px
+        margin: 0px auto
+        display: grid
+        grid-template-columns: 150px 1fr
+        gap: 50px
+        & .plantilla-titulo-img
+            height: 150px
+    & .plantillas
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        & .plantilla
+            height: 300px
+            width: 250px
+            margin: 20px 10px
+            & .plantilla-cuadrado
+                background-color: gray
+                border: 1px solid black
+                height: 250px
+                width: 250px
+        & a 
+            color: black
+            display: flex
+            align-items: center
+            flex-direction: column
+            gap: 15px
+            text-align: center
+            

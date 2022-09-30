@@ -15,6 +15,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { PlantillasComponent } from './pages/plantillas/plantillas.component';
+import { PlantillaComponent } from './components/plantilla/plantilla.component';
+
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import {MatIconModule} from '@angular/material/icon';
     PlanComponent,
     FooterComponent,
     MainComponent,
-    ElAppComponent
+    ElAppComponent,
+    PlantillasComponent,
+    PlantillaComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
