@@ -36,6 +36,23 @@
             & img
                 width: 200px
     
+.icons
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    width: 200px
+    & .icon
+        height: 50px
+        width: 50px
+        display: grid
+        place-items: center
+        & .black
+            height: 30px
+            width: 30px
+            transition: 500ms
+            &:hover
+                height: 40px
+                width: 40px
 @media screen and (min-width: 40em)
     .container-footer
         display: grid
@@ -79,20 +96,4 @@
             & img
                 width: 200px
 
-    .icons
-        display: flex
-        justify-content: space-evenly
-        align-items: center
-        width: 200px
-        & .icon
-            height: 50px
-            width: 50px
-            display: grid
-            place-items: center
-            & .black
-                height: 30px
-                width: 30px
-                transition: 500ms
-                &:hover
-                    height: 40px
-                    width: 40px
+    

@@ -40,10 +40,11 @@
         </section>
 
         <section class="mnu-list">
-            <a href="#" class="menu-button"> Caracteristicas</a>
-            <a href="#" class="menu-button"> Recursos</a>
-            <a href="#" class="menu-button"> Acceder</a>    
-            <a href="#" class="menu-button"> Registrarse</a>
+            <a href="#" class="menu-button" (click)="this.toggleMnu()"> Caracteristicas</a>
+            <a href="#/recursos" class="menu-button" (click)="this.toggleMnu()"> Recursos</a>
+            <a href="#/planes" class="menu-button" (click)="this.toggleMnu()"> Planes</a>
+            <a href="#" class="menu-button" (click)="this.toggleMnu()"> Acceder</a>    
+            <a href="#" class="menu-button" (click)="this.toggleMnu()"> Registrarse</a>
 
         </section>
         <section class="icons">

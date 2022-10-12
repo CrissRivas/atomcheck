@@ -1,38 +1,77 @@
+
 .plantilla-container
-    max-width: 1200px
     width: 100%
     display: grid
     grid-template-rows: 100px 1fr 1fr 1fr
     gap: 50px
     margin: 0 auto
+    & .plantillas-metodos
+        padding: 0px 20px 
     & .plantilla-titulo
         height: 150px
-        width: 700px
+        width: 100%
         margin: 0px auto
+        padding: 20px 
         display: grid
         grid-template-columns: 150px 1fr
         gap: 50px
+        place-items: center
+        & h3 
+            font-size: 1.5rem
         & .plantilla-titulo-img
-            height: 150px
+            height: 100px
     & .plantillas
         display: flex
         flex-wrap: wrap
         justify-content: center
         align-items: center
+        gap: 30px
         & .plantilla
-            height: 300px
-            width: 250px
-            margin: 20px 10px
+            height: 200px
+            width: 150px
+            margin: 20px 0px
             & .plantilla-cuadrado
                 background-color: gray
                 border: 1px solid black
-                height: 250px
+                height: 150px
+                width: 150px                   
+                border-radius: 20px
+            & a 
+                color: black
+                display: flex
+                align-items: center
+                flex-direction: column
+                gap: 15px
+                text-align: center
+        
+    
+
+    
+@media screen and (min-width: 40em)    
+    .plantilla-container
+        max-width: 1200px
+        & .plantilla-titulo
+            width: 700px
+            padding: 0px
+            & h3 
+                font-size: 3rem
+            & .plantilla-titulo-img
+                height: 150px
+        & .plantillas
+            & .plantilla
+                height: 300px
                 width: 250px
-        & a 
-            color: black
-            display: flex
-            align-items: center
-            flex-direction: column
-            gap: 15px
-            text-align: center
-            
+                transition: 600ms
+                & .plantilla-cuadrado
+                    
+                    height: 250px
+                    width: 250px
+                    transition: 600ms
+                    &:hover
+                        height: 300px
+                        width: 300px
+                &:hover
+                    width: 300px
+                    font-weight: bold
+               
+                

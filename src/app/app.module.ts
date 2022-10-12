@@ -19,6 +19,8 @@ import { PlantillasComponent } from './pages/plantillas/plantillas.component';
 import { PlantillaComponent } from './components/plantilla/plantilla.component';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { PlanesComponent } from './pages/planes/planes.component';
+import { PlansComponent } from './components/plans/plans.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MainComponent,
     ElAppComponent,
     PlantillasComponent,
-    PlantillaComponent
+    PlantillaComponent,
+    PlanesComponent,
+    PlansComponent
   ],
   imports: [
     BrowserModule,
